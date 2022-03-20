@@ -76,3 +76,4 @@ elif strong == True:
 
 elif very_strong == True:
     print("Password Strength: Very Strong")
+common_passwords.close()

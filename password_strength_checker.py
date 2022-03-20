@@ -2,14 +2,41 @@ import stdiomask
 
 inp = stdiomask.getpass()
 
-common_passwords = open("common_passwords.txt", 'r')
+common_passwords = open("common_passwords.txt", "r")
 for passwords in common_passwords:
     passwords = common_passwords.read()
 
 length = len(inp)
-nums = ['1','2','3','4','5','6','7','8','9','0']
+nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "="]
-alp_cap = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'rR', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+alp_cap = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+]
 
 weak = False
 medium = False
@@ -36,7 +63,7 @@ elif inp not in passwords:
                                 very_strong = True
     else:
         print("Password Strength: Very Weak")
-                        
+
 
 if weak == True:
     print("Password Strength: Weak")

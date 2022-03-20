@@ -2,7 +2,7 @@
 
 A password strength checker using python
 
-- Password will now be shown as ******** instead of (*your password)
+- Password will now be shown as ******** instead of (*your password*)
 
 **Password strength is determined by**
 
@@ -15,7 +15,7 @@ A password strength checker using python
 1. Install python:https://realpython.com/installing-python/ (link to guide)
 
 2. Install ```stdiomask``` for the asterisk effect
-3. 
+
 ```
 pip install stdiomask
 ```

@@ -9,7 +9,8 @@ A password strength checker using python
 - Length 
 - Numbers
 - If password is a common password
-- And symbols
+- Symbols
+- Uppercase letters
 
 # Usage
 1. Install Python: https://realpython.com/installing-python/ (link to guide)

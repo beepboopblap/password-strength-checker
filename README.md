@@ -12,7 +12,7 @@ A password strength checker using python
 - And symbols
 
 # Usage
-1. Install python:https://realpython.com/installing-python/ (link to guide)
+1. Install Python: https://realpython.com/installing-python/ (link to guide)
 
 2. Install ```stdiomask``` for the asterisk effect
 

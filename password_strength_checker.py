@@ -1,4 +1,6 @@
-inp = input("Enter Your Password: ")
+import stdiomask
+
+inp = stdiomask.getpass()
 
 common_passwords = open("common_passwords.txt", 'r')
 for passwords in common_passwords:
@@ -35,4 +37,3 @@ elif medium == True:
 
 elif strong == True:
     print("Password Strength: Strong")
-    

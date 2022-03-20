@@ -8,11 +8,13 @@ for passwords in common_passwords:
 
 length = len(inp)
 nums = ['1','2','3','4','5','6','7','8','9','0']
-extra = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "="]
+symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "="]
+alp_cap = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'rR', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 weak = False
 medium = False
 strong = False
+very_strong = False
 
 if inp in passwords:
     print("Password Strength: Very Weak")
@@ -24,10 +26,17 @@ elif inp not in passwords:
             if i in inp:
                 weak = False
                 medium = True
-                for j in extra:
+                for j in alp_cap:
                     if j in inp:
                         medium = False
                         strong = True
+                        for m in symbols:
+                            if m in inp:
+                                strong = False
+                                very_strong = True
+    else:
+        print("Password Strength: Very Weak")
+                        
 
 if weak == True:
     print("Password Strength: Weak")
@@ -37,3 +46,6 @@ elif medium == True:
 
 elif strong == True:
     print("Password Strength: Strong")
+
+elif very_strong == True:
+    print("Password Strength: Very Strong")
